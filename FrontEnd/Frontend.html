@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+</head>
+
+<body>
+    <h1>Student Management</h1>
+
+    <form id="studentForm">
+        <div id="studentsContainer">
+            <div class="studentEntry">
+                <label>Name : </label>
+                <input type="text" name="name" class="name" placeholder="Enter Name" required>
+                <br>
+                <label>Email : </label>
+                <input type="email" name="email" class="email" placeholder="Enter Email" required>
+                <br>
+                <label>Roll : </label>
+                <input type="text" name="roll" class="roll" placeholder="Enter Roll">
+                <br>
+                <label>Department Name : </label>
+                <input type="text" name="deptname" class="deptname" placeholder="Enter Department Name" required>
+                <br>
+                <label>Contact : </label>
+                <input type="text" name="contact" class="contact" placeholder="Enter Contact" required>
+                <br>
+                <hr>
+            </div>
+        </div>
+        <button type="button" id="addStudent">Add Another Student</button>
+        <button type="submit">Submit</button>
+
+        <!-- Button to delete selected students -->
+        <button onclick="deleteStudents()">Delete Selected Students</button>
+    </form>
+    <br>
+    <hr>
+    <div id="editContainer"></div>
+    <h1>Student List</h1>
+    <ul id="studentList"></ul>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
